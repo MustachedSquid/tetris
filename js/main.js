@@ -301,6 +301,12 @@ class Piece{
                         this.r=0
                     }
                     break;
+                case "Cross": //TODO: Cross piece rotation
+
+                    break;
+                case "Crossi": //TODO: Cross(i) inverted piece rotation
+
+                    break;
             }
         }
 
