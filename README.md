@@ -1,2 +1,6 @@
 # tetris
-I made tetris, I think.
+I made tetris.
+
+It runs on a browser.
+
+yes.
