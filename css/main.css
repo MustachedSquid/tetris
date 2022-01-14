@@ -10,14 +10,17 @@ body {
     margin-right: auto;
     border: grey solid 5px;
     background-color: black;
+    height: 100vh;
 }
 
 .grid {
     display: inline-block;
     padding: 0;
     margin: 1px;
-    width: 32px;
-    height: 32px;
+    /*width: 32px;
+    height: 32px;*/
+    width: 3vh;
+    height: 3vh;
 }
 
 #controls {
@@ -29,4 +32,12 @@ body {
     width: 33%;
     background-color: white;
     font-size: 32px;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
 }

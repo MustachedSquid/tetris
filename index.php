@@ -17,6 +17,6 @@ for ($i=0; $i<$rows; $i++){
     $html = $html . "<br>";
 }
 
-    $html = $html . "<div id='controls'><button class='controls' id='left'><b><-</b></button><button class='controls' id='right'><b>-></b></button><button class='controls' id='rotate'><b>R</b></button></div></div></div>";
+    $html = $html . "<div id='controls'><button class='controls' id='left'><b><-</b></button><button class='controls' id='right'><b>-></b></button><button class='controls' id='rotate'><b>R</b></button></div></div><p>By: <a href='https://github.com/MustachedSquid/tetris'>MustachedSquid</a></p></div>";
 
     create_page($html);
