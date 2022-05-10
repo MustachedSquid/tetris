@@ -1383,7 +1383,7 @@ function initGrid(){
     gameDOM.innerHTML = html;
 }
 
-function main(){
+function start(){
 
     initGrid();
 
@@ -1402,6 +1402,13 @@ function main(){
     right.addEventListener("click", movePieceRight);
     rotate.addEventListener("click", rotatePiece);
     console.log("Loaded main.js");
+
+    let startButton = document.getElementById("start");
+    startButton.remove();
 }
 
+function main(){
+    let startButton = document.getElementById("start");
+    startButton.addEventListener("click", start);
+}
 window.addEventListener("load", main);
