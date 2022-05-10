@@ -1364,8 +1364,29 @@ function makeMewPiece(){
     debugPieceCounter++;
 }
 
+function initGrid(){
+    let html = "";
+    let rows = 22;
+    let columns  = 10;
+
+    for (let i=0; i<rows; i++){
+        for (let j=0; j<columns; j++){
+
+        let gridId = "r"+i+"c"+j;
+        html = html + "<div id='"+gridId+"' class='grid'></div>";
+
+        }
+        html = html + "<br>";
+    }
+    let gameDOM = document.getElementById("game");
+    html = html + gameDOM.innerHTML;
+    gameDOM.innerHTML = html;
+}
 
 function main(){
+
+    initGrid();
+
     stopPieces = [new Piece()];
     stopGrids = [new Grid(rows-1, 0),new Grid(rows-1, 1),new Grid(rows-1, 2),new Grid(rows-1, 3),new Grid(rows-1, 4),new Grid(rows-1, 5),new Grid(rows-1, 6),new Grid(rows-1, 7),new Grid(rows-1, 8),new Grid(rows-1, 9)];
 
